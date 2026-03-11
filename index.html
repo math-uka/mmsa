@@ -45,7 +45,7 @@
 </head>
 <body class="font-sans bg-light text-dark min-h-screen flex flex-col">
 
-  <!-- 英雄區域（保留 math-pattern 背景，簡化標題） -->
+  <!-- 英雄區域 -->
   <section class="math-pattern py-16 md:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center">
@@ -82,42 +82,64 @@
           <i class="fa fa-download mr-3"></i> 一. 安裝 EndNote
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Windows -->
+
+          <!-- Windows 版本卡片 -->
           <div class="bg-white rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col">
             <div class="p-6 flex-grow text-center">
               <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-auto mb-6">
                 <i class="fa fa-windows text-5xl"></i>
               </div>
-              <h3 class="font-medium text-xl mb-4">Windows 版本 (EndNote 2025)</h3>
+              <h3 class="font-medium text-xl mb-4">Windows 版本 (EndNote 2025 / 21)</h3>
               <p class="text-muted mb-4 leading-relaxed">
-                下載並解壓 EndNote2025.rar<br>
-                將 EN22Inst.msi 與 License.dat 置於同一資料夾<br>
-                雙擊 EN22Inst.msi 進行安裝（無需輸入序列號）
+                官方最新版本下載
               </p>
-              <p class="text-sm text-muted mt-4">
-                備用版本：EndNote 21 → EndNote21.rar
-              </p>
+              <!-- 這裡可自行替換為您的實際官方頁面連結 -->
+              <a href="https://endnote.com/downloads" target="_blank" 
+                 class="inline-block w-full bg-primary hover:bg-primary/90 text-white text-base py-3 rounded-lg transition-colors mb-3 font-medium">
+                前往官方下載頁面 <i class="fa fa-external-link ml-2"></i>
+              </a>
+              <div class="space-y-3">
+                <a href="filez/endnote2025.zip" download 
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-base py-3 rounded-lg transition-colors font-medium">
+                  直接下載 EndNote2025.zip <i class="fa fa-download ml-2"></i>
+                </a>
+                <a href="filez/endnote21.zip" download 
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-base py-3 rounded-lg transition-colors font-medium">
+                  直接下載 EndNote21.zip <i class="fa fa-download ml-2"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <!-- Mac -->
+          <!-- Mac 版本卡片 -->
           <div class="bg-white rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col">
             <div class="p-6 flex-grow text-center">
               <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-auto mb-6">
                 <i class="fa fa-apple text-5xl"></i>
               </div>
-              <h3 class="font-medium text-xl mb-4">Mac 版本 (EndNote 2025)</h3>
+              <h3 class="font-medium text-xl mb-4">Mac 版本 (EndNote 2025 / 21)</h3>
+              <p class="text-muted mb-4 leading-relaxed">
+                官方最新版本下載
+              </p>
+              <!-- 這裡可自行替換為您的實際官方頁面連結 -->
               <a href="https://endnote.com/downloads" target="_blank" 
-                 class="inline-block w-full bg-primary hover:bg-primary/90 text-white text-base py-4 rounded-lg transition-colors mt-4 font-medium">
+                 class="inline-block w-full bg-primary hover:bg-primary/90 text-white text-base py-3 rounded-lg transition-colors mb-3 font-medium">
                 前往官方下載頁面 <i class="fa fa-external-link ml-2"></i>
               </a>
-              <p class="text-sm text-muted mt-6">
-                請至 endnote.com 官方網站選擇 macOS 安裝檔下載
-              </p>
+              <div class="space-y-3">
+                <a href="filez/EndNote2025Installer.dmg" download 
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-base py-3 rounded-lg transition-colors font-medium">
+                  直接下載 EndNote2025Installer.dmg <i class="fa fa-download ml-2"></i>
+                </a>
+                <a href="filez/EndNote21SiteInstaller.dmg" download 
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-base py-3 rounded-lg transition-colors font-medium">
+                  直接下載 EndNote21SiteInstaller.dmg <i class="fa fa-download ml-2"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <!-- 注意事項 -->
+          <!-- 注意事項卡片 -->
           <div class="bg-white rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col">
             <div class="p-6 flex-grow text-center">
               <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-auto mb-6">
@@ -129,6 +151,7 @@
               </p>
             </div>
           </div>
+
         </div>
       </div>
 
