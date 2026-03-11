@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EndNote 文獻管理軟件</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3B82F6',
+            secondary: '#7C3AED',
+            dark: '#1F2937',
+            light: '#F9FAFB',
+            muted: '#6B7280'
+          },
+          fontFamily: {
+            serif: ['Noto Serif TC', 'serif'],
+            sans: ['Noto Sans TC', 'sans-serif']
+          },
+          boxShadow: {
+            'card': '0 4px 12px rgba(0, 0, 0, 0.05)',
+            'card-hover': '0 8px 20px rgba(0, 0, 0, 0.1)'
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .math-pattern {
+        background-image: linear-gradient(45deg, rgba(59, 130, 246, 0.05) 25%, transparent 25%, transparent 75%, rgba(59, 130, 246, 0.05) 75%),
+                          linear-gradient(45deg, rgba(59, 130, 246, 0.05) 25%, transparent 25%, transparent 75%, rgba(59, 130, 246, 0.05) 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 10px 10px;
+      }
+    }
+  </style>
+</head>
+<body class="font-sans bg-light text-dark min-h-screen flex flex-col">
+
+  <!-- 英雄區域（保留 math-pattern 背景，簡化標題） -->
+  <section class="math-pattern py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="font-serif font-bold text-[clamp(2rem,5vw,3.5rem)] mb-6 text-primary">
+          EndNote 文獻管理軟件
+        </h1>
+        <p class="text-xl text-muted max-w-3xl mx-auto leading-relaxed">
+          由科睿唯安（Clarivate）開發的旗艦型文獻管理系統<br>
+          從檢索、組織、寫作到發表與共享，加速您的科研流程
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主要內容 -->
+  <main class="py-12 md:py-16 flex-grow">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 資源簡介 -->
+      <div class="mb-16">
+        <h2 class="font-serif font-bold text-2xl md:text-3xl mb-6 text-primary flex items-center justify-center">
+          <i class="fa fa-info-circle mr-3"></i> 資源簡介
+        </h2>
+        <div class="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 text-center md:text-left">
+          <p class="text-lg leading-relaxed">
+            EndNote 文獻管理軟件是由科睿唯安公司開發的旗艦型文獻管理系統，從文獻檢索、組織科研活動、撰寫論文，到發表文章和共享科研成果，EndNote 機構版幫助機構用戶加速科研流程。
+          </p>
+        </div>
+      </div>
+
+      <!-- 安裝 EndNote -->
+      <div class="mb-16">
+        <h2 class="font-serif font-bold text-2xl md:text-3xl mb-8 text-primary flex items-center justify-center">
+          <i class="fa fa-download mr-3"></i> 一. 安裝 EndNote
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Windows -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col">
+            <div class="p-6 flex-grow text-center">
+              <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-auto mb-6">
+                <i class="fa fa-windows text-5xl"></i>
+              </div>
+              <h3 class="font-medium text-xl mb-4">Windows 版本 (EndNote 2025)</h3>
+              <p class="text-muted mb-4 leading-relaxed">
+                下載並解壓 EndNote2025.rar<br>
+                將 EN22Inst.msi 與 License.dat 置於同一資料夾<br>
+                雙擊 EN22Inst.msi 進行安裝（無需輸入序列號）
+              </p>
+              <p class="text-sm text-muted mt-4">
+                備用版本：EndNote 21 → EndNote21.rar
+              </p>
+            </div>
+          </div>
+
+          <!-- Mac -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col">
+            <div class="p-6 flex-grow text-center">
+              <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-auto mb-6">
+                <i class="fa fa-apple text-5xl"></i>
+              </div>
+              <h3 class="font-medium text-xl mb-4">Mac 版本 (EndNote 2025)</h3>
+              <a href="https://endnote.com/downloads" target="_blank" 
+                 class="inline-block w-full bg-primary hover:bg-primary/90 text-white text-base py-4 rounded-lg transition-colors mt-4 font-medium">
+                前往官方下載頁面 <i class="fa fa-external-link ml-2"></i>
+              </a>
+              <p class="text-sm text-muted mt-6">
+                請至 endnote.com 官方網站選擇 macOS 安裝檔下載
+              </p>
+            </div>
+          </div>
+
+          <!-- 注意事項 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col">
+            <div class="p-6 flex-grow text-center">
+              <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-auto mb-6">
+                <i class="fa fa-exclamation-triangle text-5xl"></i>
+              </div>
+              <h3 class="font-medium text-xl mb-4">安裝注意事項</h3>
+              <p class="text-muted text-lg leading-relaxed mt-4">
+                安裝 EndNote 2025 前，<br>請務必先關閉所有 Office 軟件<br>（Word、Excel、Outlook 等）
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 使用 EndNote -->
+      <div>
+        <h2 class="font-serif font-bold text-2xl md:text-3xl mb-8 text-secondary flex items-center justify-center">
+          <i class="fa fa-book mr-3"></i> 二、使用 EndNote
+        </h2>
+        <div class="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300">
+          <ul class="space-y-6 text-lg">
+            <li class="flex items-start">
+              <i class="fa fa-check-circle text-secondary text-2xl mr-4 mt-1"></i>
+              <div>
+                <strong>創建線上帳戶：</strong> 
+                <a href="https://www.myendnoteweb.com/" target="_blank" class="text-primary hover:underline">Create your free online account</a>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fa fa-check-circle text-secondary text-2xl mr-4 mt-1"></i>
+              <div>下載並安裝「Cite While You Write」插件，即可在 Word 中即時插入與管理參考文獻</div>
+            </li>
+            <li class="flex items-start">
+              <i class="fa fa-check-circle text-secondary text-2xl mr-4 mt-1"></i>
+              <div>
+                <strong>EndNote 21 使用教程（影片，可重複觀看）：</strong><br>
+                <a href="https://share.vidyard.com/watch/sb9q2bb3AB6xSParGwqxKL" target="_blank" class="text-primary hover:underline break-all">https://share.vidyard.com/watch/sb9q2bb3AB6xSParGwqxKL</a>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fa fa-check-circle text-secondary text-2xl mr-4 mt-1"></i>
+              <div>
+                <strong>官方產品使用指南：</strong><br>
+                <a href="https://app.ma.scrmtech.com/resources/ResourcePc/resourcePcInfo?pf_uid=18476_1812&pf_type=3&id=22644" target="_blank" class="text-primary hover:underline break-all">點擊查看詳細指南</a>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fa fa-check-circle text-secondary text-2xl mr-4 mt-1"></i>
+              <div>微信 / Bilibili / 知乎 搜尋「科睿唯安」，獲取更多免費教學影片與資源</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
