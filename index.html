@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
-  
+ 
   <script>
     tailwind.config = {
       theme: {
@@ -31,7 +31,7 @@
       }
     }
   </script>
-  
+ 
   <style type="text/tailwindcss">
     @layer utilities {
       .math-pattern {
@@ -44,7 +44,6 @@
   </style>
 </head>
 <body class="font-sans bg-light text-dark min-h-screen flex flex-col">
-
   <!-- 英雄區域 -->
   <section class="math-pattern py-16 md:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,11 +58,9 @@
       </div>
     </div>
   </section>
-
   <!-- 主要內容 -->
   <main class="py-12 md:py-16 flex-grow">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
       <!-- 資源簡介 -->
       <div class="mb-16">
         <h2 class="font-serif font-bold text-2xl md:text-3xl mb-6 text-primary flex items-center justify-center">
@@ -75,14 +72,12 @@
           </p>
         </div>
       </div>
-
       <!-- 安裝 EndNote -->
       <div class="mb-16">
         <h2 class="font-serif font-bold text-2xl md:text-3xl mb-8 text-primary flex items-center justify-center">
           <i class="fa fa-download mr-3"></i> 一. 安裝 EndNote
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
           <!-- Windows 版本卡片 -->
           <div class="bg-white rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col">
             <div class="p-6 flex-grow text-center">
@@ -93,23 +88,34 @@
               <p class="text-muted mb-4 leading-relaxed">
                 下載最新版本
               </p>
-              <a href="https://drive.google.com/drive/folders/1yCVXGu-SkZJhx1sV2za5BVV6jvApzaxX?usp=drive_link" target="_blank" 
+              <a href="https://drive.google.com/drive/folders/1yCVXGu-SkZJhx1sV2za5BVV6jvApzaxX?usp=drive_link" target="_blank"
                  class="inline-block w-full bg-primary hover:bg-primary/90 text-white text-base py-3 rounded-lg transition-colors mb-3 font-medium">
                 前往下載頁面 <i class="fa fa-external-link ml-2"></i>
               </a>
-              <div class="space-y-3">
-                <a href="filez/endnote2025.zip" download 
-                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-base py-3 rounded-lg transition-colors font-medium">
-                  直接下載 EndNote2025.zip <i class="fa fa-download ml-2"></i>
+              <div class="space-y-2 mt-4">
+                <p class="text-sm text-muted">直接下載 RAR 分卷檔（下載全部後解壓合併）</p>
+                <!-- EndNote2025 分卷 -->
+                <a href="filez/EndNote2025.part1.rar" download
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-sm py-2 rounded-lg transition-colors">
+                  EndNote2025.part1.rar <i class="fa fa-download ml-1"></i>
                 </a>
-                <a href="filez/endnote21.zip" download 
-                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-base py-3 rounded-lg transition-colors font-medium">
-                  直接下載 EndNote21.zip <i class="fa fa-download ml-2"></i>
+                <a href="filez/EndNote2025.part2.rar" download
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-sm py-2 rounded-lg transition-colors">
+                  EndNote2025.part2.rar <i class="fa fa-download ml-1"></i>
+                </a>
+             
+                <!-- EndNote21 分卷 -->
+                <a href="filez/EndNote21.part1.rar" download
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-sm py-2 rounded-lg transition-colors mt-4">
+                  EndNote21.part1.rar <i class="fa fa-download ml-1"></i>
+                </a>
+                <a href="filez/EndNote21.part2.rar" download
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-sm py-2 rounded-lg transition-colors">
+                  EndNote21.part2.rar <i class="fa fa-download ml-1"></i>
                 </a>
               </div>
             </div>
           </div>
-
           <!-- Mac 版本卡片 -->
           <div class="bg-white rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col">
             <div class="p-6 flex-grow text-center">
@@ -120,23 +126,33 @@
               <p class="text-muted mb-4 leading-relaxed">
                 下載最新版本
               </p>
-              <a href="https://download.endnote.com/downloads/2025/EndNote2025Installer.dmg" target="_blank" 
+              <a href="https://download.endnote.com/downloads/2025/EndNote2025Installer.dmg" target="_blank"
                  class="inline-block w-full bg-primary hover:bg-primary/90 text-white text-base py-3 rounded-lg transition-colors mb-3 font-medium">
                 前往下載頁面 <i class="fa fa-external-link ml-2"></i>
               </a>
-              <div class="space-y-3">
-                <a href="filez/EndNote2025Installer.dmg" download 
-                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-base py-3 rounded-lg transition-colors font-medium">
-                  直接下載 EndNote2025Installer.dmg <i class="fa fa-download ml-2"></i>
+              <div class="space-y-2 mt-4">
+                <p class="text-sm text-muted">直接下載 RAR 分卷檔（下載全部後解壓合併）</p>
+                <!-- EndNote2025Installer 分卷 -->
+                <a href="filez/EndNote2025Installer.part1.rar" download
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-sm py-2 rounded-lg transition-colors">
+                  EndNote2025Installer.part1.rar <i class="fa fa-download ml-1"></i>
                 </a>
-                <a href="filez/EndNote21SiteInstaller.dmg" download 
-                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-base py-3 rounded-lg transition-colors font-medium">
-                  直接下載 EndNote21SiteInstaller.dmg <i class="fa fa-download ml-2"></i>
+                <a href="filez/EndNote2025Installer.part2.rar" download
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-sm py-2 rounded-lg transition-colors">
+                  EndNote2025Installer.part2.rar <i class="fa fa-download ml-1"></i>
+                </a>
+                <!-- EndNote21SiteInstaller 分卷 -->
+                <a href="filez/EndNote21SiteInstaller.part1.rar" download
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-sm py-2 rounded-lg transition-colors mt-4">
+                  EndNote21SiteInstaller.part1.rar <i class="fa fa-download ml-1"></i>
+                </a>
+                <a href="filez/EndNote21SiteInstaller.part2.rar" download
+                   class="inline-block w-full bg-green-600 hover:bg-green-700 text-white text-sm py-2 rounded-lg transition-colors">
+                  EndNote21SiteInstaller.part2.rar <i class="fa fa-download ml-1"></i>
                 </a>
               </div>
             </div>
           </div>
-
           <!-- 注意事項卡片 -->
           <div class="bg-white rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col">
             <div class="p-6 flex-grow text-center">
@@ -145,15 +161,14 @@
               </div>
               <h3 class="font-medium text-xl mb-4">安裝注意事項</h3>
               <p class="text-muted text-lg leading-relaxed mt-4">
-                安裝 EndNote 2025 前，<br>請務必先關閉所有 Office 軟件<br>（Word、Excel、Outlook 等）
+                安裝 EndNote 2025 前，<br>請務必先關閉所有 Office 軟件<br>（Word、Excel、Outlook 等）<br><br>
+                <span class="text-sm">RAR 分卷檔下載完成後，使用 WinRAR 或 7-Zip 右鍵點擊 part1.rar 選擇「解壓縮」即可合併</span>
               </p>
             </div>
           </div>
-
         </div>
       </div>
-
-      <!-- 使用 EndNote -->
+      <!-- 使用 EndNote（保持不變） -->
       <div>
         <h2 class="font-serif font-bold text-2xl md:text-3xl mb-8 text-secondary flex items-center justify-center">
           <i class="fa fa-book mr-3"></i> 二、使用 EndNote
@@ -163,7 +178,7 @@
             <li class="flex items-start">
               <i class="fa fa-check-circle text-secondary text-2xl mr-4 mt-1"></i>
               <div>
-                <strong>創建線上帳戶：</strong> 
+                <strong>創建線上帳戶：</strong>
                 <a href="https://www.myendnoteweb.com/" target="_blank" class="text-primary hover:underline">Create your free online account</a>
               </div>
             </li>
@@ -192,9 +207,7 @@
           </ul>
         </div>
       </div>
-
     </div>
   </main>
-
 </body>
 </html>
